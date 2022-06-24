@@ -1,0 +1,38 @@
+
+      <!-- <div class="ion-text-start">
+        <img src="../assets/user/1.png">
+        <h4>Agbama</h4>
+        <p>View profile</p>
+      </div>
+   -->
+
+   <ion-menu side="start" menuId="first" contentId="main">
+    <ion-header>
+      <ion-toolbar >
+        <!-- <ion-title>Start Menu</ion-title> -->
+        <img src="../assets/logo.png" style="width: 100%;"/>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item [routerLink]="['/']">
+          <ion-icon name="home"></ion-icon>
+          Home
+        </ion-item>
+        <ion-item  [routerLink]="['/about']">
+          <ion-icon name="person"></ion-icon>
+         
+          About
+        </ion-item>
+        <ion-item [routerLink]="['/contact']">
+          <ion-icon name="journal"></ion-icon>
+          Contact
+        </ion-item>
+        <ion-item>
+          <ion-icon name="key"></ion-icon>
+          FAQ'S
+        </ion-item>
+
+      </ion-list>
+    </ion-content>
+  </ion-menu>

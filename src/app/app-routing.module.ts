@@ -44,6 +44,22 @@ const routes: Routes = [
     path: 'screen',
     loadChildren: () => import('./User/screen/screen.module').then( m => m.ScreenPageModule)
   },
+  {
+    path: 'automatic-orders',
+    loadChildren: () => import('./User/automatic-orders/automatic-orders.module').then( m => m.AutomaticOrdersPageModule)
+  },
+  {
+    path: 'confirm-pickup',
+    loadChildren: () => import('./User/confirm-pickup/confirm-pickup.module').then( m => m.ConfirmPickupPageModule)
+  },
+  {
+    path: 'mark-delivery',
+    loadChildren: () => import('./User/mark-delivery/mark-delivery.module').then( m => m.MarkDeliveryPageModule)
+  },
+  {
+    path: 'delivery-recepit',
+    loadChildren: () => import('./User/delivery-recepit/delivery-recepit.module').then( m => m.DeliveryRecepitPageModule)
+  },
 ];
 
 @NgModule({
