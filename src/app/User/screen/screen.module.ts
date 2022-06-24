@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { VehiclePageRoutingModule } from './vehicle-routing.module';
+import { ScreenPageRoutingModule } from './screen-routing.module';
 
-import { VehiclePage } from './vehicle.page';
+import { ScreenPage } from './screen.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    VehiclePageRoutingModule
+    ScreenPageRoutingModule
   ],
-  declarations: [VehiclePage]
+  declarations: [ScreenPage]
 })
-export class VehiclePageModule {}
+export class ScreenPageModule {}

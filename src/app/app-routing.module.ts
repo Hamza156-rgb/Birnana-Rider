@@ -19,10 +19,7 @@ const routes: Routes = [
     path: 'personal',
     loadChildren: () => import('./personal/personal.module').then( m => m.PersonalPageModule)
   },
-  {
-    path: 'vehicle',
-    loadChildren: () => import('./vehicle/vehicle.module').then( m => m.VehiclePageModule)
-  },
+ 
   {
     path: 'register',
     loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
@@ -42,6 +39,10 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'screen',
+    loadChildren: () => import('./User/screen/screen.module').then( m => m.ScreenPageModule)
   },
 ];
 
