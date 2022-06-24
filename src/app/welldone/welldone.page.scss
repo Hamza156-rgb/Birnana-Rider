@@ -1,0 +1,36 @@
+h3 {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    color: #f1bd42;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    margin-left: 11%;
+}
+
+h4 {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    color: #2fa94e;
+}
+p {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #555b6a;
+}
+
+button {
+    width: 100%;
+    height: 45px;
+    background: #f1bd42;
+    border-radius: 5px;
+    color: white;
+}

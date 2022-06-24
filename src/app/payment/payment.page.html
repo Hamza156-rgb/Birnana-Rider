@@ -1,9 +1,66 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>payment</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+
+  <ion-row class="ion-padding">
+    <ion-col size="4">
+      <div class="ion-text-start">
+        <ion-icon class="ion-padding-top" name="chevron-back-outline" style="font-size: 30px;  color: black;"
+          [routerLink]="['/document']"></ion-icon>
+      </div>
+    </ion-col>
+    <ion-col size="4">
+      <div class="ion-text-center">
+        <h3>
+          Birnana
+        </h3>
+      </div>
+    </ion-col>
+    <ion-col size="4">
+      <div class="ion-text-end ">
+        <p>Step <span style="color: #F1BD42;">4</span> of 4</p>
+      </div>
+    </ion-col>
+  </ion-row>
+
+
+  <div class="ion-padding" style="margin-left: 5%;">
+    <h4>Vechile Details</h4>
+
+    <h5>Please provide us with your vechile details for proper arrangement</h5>
+  </div>
+
+
+
+
+  <ion-row class="ion-padding">
+    <ion-col size="12" class="ion-padding-top">
+      <ion-label>Bank holder name</ion-label>
+      <ion-input placeholder="e.g, John"></ion-input>
+
+    </ion-col>
+
+    <ion-col size="12" class="ion-padding-top">
+      <ion-label>Account number</ion-label>
+      <ion-input placeholder="e.g, 0561416996"></ion-input>
+
+    </ion-col>
+
+
+    <ion-col size="12" class="ion-padding-top">
+      <ion-label>Bank name</ion-label>
+      <ion-select placeholder="Calabar">
+        <ion-select-option> ABC</ion-select-option>
+        <ion-select-option> DEF</ion-select-option>
+        <ion-select-option> GHI</ion-select-option>
+      </ion-select>
+
+    </ion-col>
+
+
+    <ion-col size="12" class="ion-padding-top">
+      <button [routerLink]="['/welldone']">Confirm</button>
+    </ion-col>
+
+
+  </ion-row>
 
 </ion-content>

@@ -1,9 +1,56 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content>
+
+  <ion-row>
+    <ion-col size="4">
+      <div class="ion-text-start">
+        <ion-icon class="ion-padding-top" name="chevron-back-outline" style="font-size: 30px;  color: black;"
+          [routerLink]="['/welldone']"></ion-icon>
+      </div>
+    </ion-col>
+    <ion-col size="4">
+      <div class="ion-text-center">
+        <h3>
+          Birnana
+        </h3>
+      </div>
+    </ion-col>
+   
+  </ion-row>
+
+
+  <div class="ion-padding">
+    <h4>Login</h4>
+
+    <h5>Please provide your login details fo easy and quick access to the app</h5>
+  </div>
+
+
+  <ion-row class="ion-padding">
+    <ion-col size="12">
+      <ion-label>Email address</ion-label>
+      <ion-input placeholder="e.g, Ulimhukaakem@gmail.com"></ion-input>
+
+    </ion-col>
+
+    <ion-col size="12" class="ion-padding-top">
+      <ion-label>Password</ion-label>
+      <ion-input placeholder="e.g, 223455"></ion-input>
+
+    </ion-col>
+
+    <ion-col>
+      <div class="ion-text-center">
+        <p>Forgot password?</p>
+      </div>
+    </ion-col>
+
+
+    <ion-col size="12" class="ion-padding-top">
+      <button   [routerLink]="['/document']">Confirm</button>
+    </ion-col>
+
+  </ion-row>
 
 </ion-content>

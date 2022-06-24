@@ -1,9 +1,102 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>document</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+
+  <ion-row class="ion-padding">
+    <ion-col size="4">
+      <div class="ion-text-start">
+        <ion-icon class="ion-padding-top" name="chevron-back-outline" style="font-size: 30px;  color: black;"
+          [routerLink]="['/register']"></ion-icon>
+      </div>
+    </ion-col>
+    <ion-col size="4">
+      <div class="ion-text-center">
+        <h3>
+          Birnana
+        </h3>
+      </div>
+    </ion-col>
+    <ion-col size="4">
+      <div class="ion-text-end ">
+        <p>Step <span style="color: #F1BD42;">3</span> of 4</p>
+      </div>
+    </ion-col>
+  </ion-row>
+
+
+  <div class="ion-padding">
+    <h4>Document</h4>
+
+    <h5>Please provide us with relevant document details and capturing</h5>
+  </div>
+
+  <ion-row>
+    <ion-col size="12">
+      <ion-card>
+        <ion-card-header>
+          Add Driving License Card
+        </ion-card-header>
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="12" class="ion-padding">
+              <ion-label>Nuban number</ion-label>
+              <ion-input placeholder="e,g, 2345657584"></ion-input>
+
+            </ion-col>
+
+            <ion-col size="12" class="ion-padding">
+              <ion-label>Issued date</ion-label>
+              <ion-input type="date"></ion-input>
+
+            </ion-col>
+
+            <ion-col size="12" class="ion-padding">
+              <div class="ion-text-end">
+                <button class="upload">
+
+                  <ion-icon name="add-outline" style="color: black;font-size: 12px;border: 1px dotted black;">
+                  </ion-icon>
+                  Upload a file
+                </button>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="12">
+      <ion-card>
+        
+
+        <ion-card-content>
+        <h6 class="profile">Profile photo</h6>
+        <h6 class="text">Please provide us with a clear potrait picture of yourself. Picture should contain your face only</h6>  
+      
+      
+        <ion-col size="12" class="ion-padding">
+          <div class="ion-text-end">
+            <button class="upload">
+
+              <ion-icon name="add-outline" style="color: black;font-size: 12px;border: 1px dotted black;">
+              </ion-icon>
+              Upload a file
+            </button>
+          </div>
+        </ion-col>
+      
+      
+      </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="12" class="ion-padding">
+      <button class="next"  [routerLink]="['/payment']">Next</button>
+    </ion-col>
+  </ion-row>
+
+
 
 </ion-content>

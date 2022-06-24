@@ -1,9 +1,89 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>register</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+
+  <ion-row class="ion-padding">
+    <ion-col size="4">
+      <div class="ion-text-start">
+        <ion-icon class="ion-padding-top" name="chevron-back-outline" style="font-size: 30px;  color: black;"
+          [routerLink]="['/personal']"></ion-icon>
+      </div>
+    </ion-col>
+    <ion-col size="4">
+      <div class="ion-text-center">
+        <h3>
+          Birnana
+        </h3>
+      </div>
+    </ion-col>
+    <ion-col size="4">
+      <div class="ion-text-end ">
+        <p>Step 2 of 4</p>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <div class="ion-padding">
+    <h4>Vechile Details</h4>
+
+    <h5>Please provide us with your vechile details for proper arrangement</h5>
+  </div>
+
+
+
+  <ion-row>
+    <ion-col size="12" class="ion-padding">
+      <ion-list>
+
+        <ion-item lines="none">
+          <ion-label class="label">I have a vechile to use for delivery</ion-label>
+          <ion-checkbox slot="start" color="success" class="checkbox"></ion-checkbox>
+        </ion-item>
+
+      </ion-list>
+
+    </ion-col>
+
+    <ion-col size="12" class="ion-padding">
+      <ion-label>Vechile manufacturer</ion-label>
+      <ion-input placeholder="e,g, Yamaha 314"></ion-input>
+
+    </ion-col>
+
+
+    <ion-col size="12" class="ion-padding">
+      <ion-label>Vechile type</ion-label>
+      <ion-select placeholder="Motor Bike">
+        <ion-select-option> Motor Bike</ion-select-option>
+        <ion-select-option> Heavy Bike</ion-select-option>
+        <ion-select-option> Scooter</ion-select-option>
+      </ion-select>
+
+    </ion-col>
+
+
+    <ion-col size="12" class="ion-padding">
+      <ion-label>License plate</ion-label>
+      <ion-input placeholder="e.g, BG 336 CB"></ion-input>
+
+    </ion-col>
+
+
+    <ion-col size="12" class="ion-padding">
+      <ion-label>Address</ion-label>
+      <ion-select placeholder="Calabar">
+        <ion-select-option> USA</ion-select-option>
+        <ion-select-option> USA</ion-select-option>
+        <ion-select-option> USA</ion-select-option>
+      </ion-select>
+
+    </ion-col>
+
+
+
+    <ion-col size="12" class="ion-padding">
+      <button  [routerLink]="['/document']">Next</button>
+    </ion-col>
+
+
+  </ion-row>
 
 </ion-content>

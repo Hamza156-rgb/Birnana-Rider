@@ -1,9 +1,73 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>personal</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+
+  <ion-row class="ion-padding">
+    <ion-col size="4">
+      <div class="ion-text-start">
+        <ion-icon class="ion-padding-top" name="chevron-back-outline" style="font-size: 30px;  color: black;"
+          [routerLink]="['/welcome']"></ion-icon>
+      </div>
+    </ion-col>
+    <ion-col size="4">
+      <div class="ion-text-center">
+        <h3>
+          Birnana
+        </h3>
+      </div>
+    </ion-col>
+    <ion-col size="4">
+      <div class="ion-text-end ">
+        <p>Step 1 of 4</p>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <div class="ion-padding">
+    <h4>Personal Information</h4>
+
+    <h5>Please provide us with your personal details to know you better</h5>
+  </div>
+
+
+
+  <ion-row >
+    <ion-col size="12" class="ion-padding">
+      <ion-label>First Name</ion-label>
+        <ion-input placeholder="e.g, John"></ion-input>
+      
+    </ion-col>
+
+    <ion-col size="12" class="ion-padding">
+      <ion-label>Last name</ion-label>
+        <ion-input placeholder="e.g, John"></ion-input>
+      
+    </ion-col>
+
+
+    <ion-col size="12" class="ion-padding">
+      <ion-label>Date of birth</ion-label>
+        <ion-input type="date"></ion-input>
+      
+    </ion-col>
+
+
+    <ion-col size="12" class="ion-padding">
+      <ion-label>Email Address</ion-label>
+        <ion-input placeholder="e.g, johnDoe@gmail.com"></ion-input>
+      
+    </ion-col>
+
+
+    <ion-col size="12" class="ion-padding">
+      <ion-label>Mobile number</ion-label>
+        <ion-input placeholder="e.g, +2349069469010"></ion-input>
+      
+    </ion-col>
+
+    <ion-col size="12"  class="ion-padding">
+      <button   [routerLink]="['/register']">Next</button>
+    </ion-col>
+
+
+  </ion-row>
 
 </ion-content>
