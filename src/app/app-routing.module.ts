@@ -60,6 +60,18 @@ const routes: Routes = [
     path: 'delivery-recepit',
     loadChildren: () => import('./User/delivery-recepit/delivery-recepit.module').then( m => m.DeliveryRecepitPageModule)
   },
+  {
+    path: 'pickup-arrived',
+    loadChildren: () => import('./User/pickup-arrived/pickup-arrived.module').then( m => m.PickupArrivedPageModule)
+  },
+  {
+    path: 'start-delivery',
+    loadChildren: () => import('./User/start-delivery/start-delivery.module').then( m => m.StartDeliveryPageModule)
+  },
+  {
+    path: 'delivery-arrived',
+    loadChildren: () => import('./User/delivery-arrived/delivery-arrived.module').then( m => m.DeliveryArrivedPageModule)
+  },
 ];
 
 @NgModule({

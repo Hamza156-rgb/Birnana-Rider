@@ -8,42 +8,55 @@
           <ion-row>
 
 
+
+
+
             <ion-col size="8">
               <div class="ion-text-start">
-                <p class="address">Pickup Address</p>
+                <p class="address">Delivery profile:</p>
               </div>
             </ion-col>
             <ion-col size="4">
-              <div class="ion-text-end" >
-                <p class="km">3.2km</p>
+              <div class="ion-text-end">
+                <p class="km">1.2km</p>
               </div>
             </ion-col>
 
 
             <ion-col size="12">
+              <div class="ion-text-start">
+
+                <p class="name ion-padding">James Anderson</p>
+              </div>
+            </ion-col>
+
+
+
+
+
+            <ion-col size="10">
               <ion-item lines="none">
 
-                <ion-checkbox color="success">
+                <ion-checkbox color="warning">
 
 
                 </ion-checkbox>
-                <p class="check"> 3rd Ave road, Ikot Ansa</p>
+                <p class="check">13th SDAT Cricket Ground</p>
               </ion-item>
             </ion-col>
 
+            <ion-col size="2">
+              <ion-icon name="call" style="background: #F1BD42;color: white;border-radius: 20px;font-size: 20px;">
+              </ion-icon>
+            </ion-col>
+
             <ion-col size="12" class="ion-padding">
-              <div class="ion-text-start" >
+              <div class="ion-text-start">
                 Delivery Address
               </div>
             </ion-col>
 
-            <ion-col size="12">
-              <ion-item lines="none">
-                <ion-checkbox color="warning">
-                </ion-checkbox>
-                <p class="check"> 13 SDAT Cricket Ground </p>
-              </ion-item>
-            </ion-col>
+
 
             <ion-col size="6">
               <div class="ion-text-start">
@@ -72,12 +85,12 @@
               </div>
             </ion-col>
           </ion-row>
-          <ion-row class="ion-padding-top">
-            <ion-col size="6">
-              <button class="cancel" [routerLink]="['/screen']">Cancel</button>
-            </ion-col>
-            <ion-col size="6">
-              <button class="confirm"  [routerLink]="['/pickup-arrived']" >Confirm</button>
+
+
+          <ion-row class="ion-padding">
+
+            <ion-col size="12">
+              <button class="arrived" [routerLink]="['/start-delivery']">Arrived</button>
             </ion-col>
           </ion-row>
         </ion-card-content>

@@ -8,19 +8,34 @@
           <ion-row>
 
 
+
+
+
             <ion-col size="8">
               <div class="ion-text-start">
-                <p class="address">Pickup Address</p>
+                <p class="time">4:59</p>
               </div>
             </ion-col>
             <ion-col size="4">
-              <div class="ion-text-end" >
+              <div class="ion-text-end">
                 <p class="km">3.2km</p>
               </div>
             </ion-col>
 
+           
+              <ion-col size="12">
+                <div class="user">
+                <ion-img src="../assets/user/1.png" style="width: 10%;">
+                </ion-img>
+                <p class="name ion-padding">Andre Krist</p>
+              </div>
+              </ion-col>
+          
 
-            <ion-col size="12">
+
+
+
+            <ion-col size="10">
               <ion-item lines="none">
 
                 <ion-checkbox color="success">
@@ -31,19 +46,18 @@
               </ion-item>
             </ion-col>
 
+            <ion-col size="2">
+              <ion-icon name="call" style="background: #F1BD42;color: white;border-radius: 20px;font-size: 20px;">
+              </ion-icon>
+            </ion-col>
+
             <ion-col size="12" class="ion-padding">
-              <div class="ion-text-start" >
+              <div class="ion-text-start">
                 Delivery Address
               </div>
             </ion-col>
 
-            <ion-col size="12">
-              <ion-item lines="none">
-                <ion-checkbox color="warning">
-                </ion-checkbox>
-                <p class="check"> 13 SDAT Cricket Ground </p>
-              </ion-item>
-            </ion-col>
+
 
             <ion-col size="6">
               <div class="ion-text-start">
@@ -72,6 +86,8 @@
               </div>
             </ion-col>
           </ion-row>
+
+
           <ion-row class="ion-padding-top">
             <ion-col size="6">
               <button class="cancel" [routerLink]="['/screen']">Cancel</button>
