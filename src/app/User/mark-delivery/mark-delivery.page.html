@@ -1,9 +1,110 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>markDelivery</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+
+  <ion-row>
+    <ion-col size="4">
+      <div class="ion-text-start">
+        <ion-icon class="ion-padding-top" name="chevron-back-outline" style="font-size: 20px;  color: black;"
+          [routerLink]="['/delivery-arrived']"></ion-icon>
+      </div>
+    </ion-col>
+    <ion-col size="4">
+      <div class="ion-text-center">
+        <h3>
+          Order 342
+        </h3>
+      </div>
+    </ion-col>
+
+  </ion-row>
+
+
+  <h4>Mark order is an important aspects of the app, all orders must be marked to validate a safe delivery</h4>
+
+
+  <ion-row class="ion-padding">
+    <ion-col size="10">
+      <div class="ion-text-start">
+        <p>Delivered directly to customer</p>
+      </div>
+    </ion-col>
+    <ion-col size="2">
+      <div class="ion-padding-top ion-text-end">
+        <ion-radio color="warning"></ion-radio>
+      </div>
+    </ion-col>
+
+
+
+    <ion-col size="10">
+      <div class="ion-text-start">
+        <p>Delivered directly to customer</p>
+      </div>
+    </ion-col>
+    <ion-col size="2">
+      <div class="ion-padding-top ion-text-end">
+        <ion-radio color="warning"></ion-radio>
+      </div>
+    </ion-col>
+
+
+
+    <ion-col size="10">
+      <div class="ion-text-start">
+        <p>Customer directed on doorpost</p>
+      </div>
+    </ion-col>
+    <ion-col size="2">
+      <div class="ion-padding-top ion-text-end">
+        <ion-radio color="warning"></ion-radio>
+      </div>
+    </ion-col>
+
+
+
+    <ion-col size="10">
+      <div class="ion-text-start">
+        <p>Delivered to third party on customer notice</p>
+      </div>
+    </ion-col>
+    <ion-col size="2">
+      <div class="ion-padding-top ion-text-end">
+        <ion-radio color="warning"></ion-radio>
+      </div>
+    </ion-col>
+
+
+
+    <ion-col size="10">
+      <div class="ion-text-start">
+        <p>Customer was offline</p>
+      </div>
+    </ion-col>
+    <ion-col size="2">
+      <div class="ion-padding-top ion-text-end">
+        <ion-radio color="warning"></ion-radio>
+      </div>
+    </ion-col>
+  </ion-row>
+
+
+
+  <ion-row>
+    <ion-card>
+      <ion-card-content>
+        <h5>
+          Customer marked as offline will be added fees of N200 for back to back delivery. We advised all riders to do a
+          proper reach out before marking any customer as offline
+        </h5>
+      </ion-card-content>
+    </ion-card>
+  </ion-row>
+
+  <ion-row class="ion-padding-top">
+    <ion-col size="12" class="ion-padding">
+      <button  [routerLink]="['/delivery-recepit']">
+        Confirm
+      </button>
+    </ion-col>
+  </ion-row>
 
 </ion-content>
