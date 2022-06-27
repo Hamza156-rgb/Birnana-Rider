@@ -1,0 +1,87 @@
+<ion-content>
+  <ion-row>
+    <ion-col size="12">
+      <ion-card>
+
+        <ion-card-content>
+
+          <ion-row>
+
+
+            <ion-col size="8">
+              <div class="ion-text-start">
+                <p class="address">Pickup Address</p>
+              </div>
+            </ion-col>
+            <ion-col size="4">
+              <div class="ion-text-end" >
+                <p class="km">3.2km</p>
+              </div>
+            </ion-col>
+
+
+            <ion-col size="12">
+              <ion-item lines="none">
+
+                <ion-checkbox color="success">
+
+
+                </ion-checkbox>
+                <p class="check"> 3rd Ave road, Ikot Ansa</p>
+              </ion-item>
+            </ion-col>
+
+            <ion-col size="12" class="ion-padding">
+              <div class="ion-text-start" >
+                Delivery Address
+              </div>
+            </ion-col>
+
+            <ion-col size="12">
+              <ion-item lines="none">
+                <ion-checkbox color="warning">
+                </ion-checkbox>
+                <p class="check"> 13 SDAT Cricket Ground </p>
+              </ion-item>
+            </ion-col>
+
+            <ion-col size="6">
+              <div class="ion-text-start">
+                <p class="estimate">Estimated fare</p>
+              </div>
+
+            </ion-col>
+
+            <ion-col size="6">
+              <div class="ion-text-end">
+                <p class="method">
+                  Payment method
+                </p>
+              </div>
+            </ion-col>
+            <ion-col size="6">
+              <div class="ion-text-start">
+                <p class="num">N300</p>
+              </div>
+            </ion-col>
+            <ion-col size="6">
+              <div class="ion-text-end">
+                <p class="pay">
+                  Pay on delivery
+                </p>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row class="ion-padding-top">
+            <ion-col size="6">
+              <button class="cancel" [routerLink]="['/cancel-pickup-order']">Cancel</button>
+            </ion-col>
+            <ion-col size="6">
+              <button class="confirm"  [routerLink]="['/next-pickup']" >Confirm</button>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>

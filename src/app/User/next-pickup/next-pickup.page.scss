@@ -1,0 +1,89 @@
+.address {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #555b6a;
+}
+
+.km {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    color: #f1bd42;
+}
+.check {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 2%;
+    padding-left: 4%;
+    color: #030919;
+}
+
+ion-checkbox {
+    width: 16px !important;
+    height: 16px !important;
+}
+.estimate {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: #555b6a;
+}
+
+.method {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: #555b6a;
+}
+
+.num {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    color: #030919;
+}
+
+.pay {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    color: #030919;
+}
+
+
+.user {
+    display: flex;
+}
+.name {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #030919;
+}
+
+
+.cancel{
+    width: 100%;
+    height: 45px;
+
+    color: #555B6A;
+    background: #E5E5E5;
+    border-radius: 5px;
+}
+.confirm{
+    width: 100%;
+    height: 45px;
+    color: white;
+    background: #F1BD42;
+    border-radius: 5px;
+}

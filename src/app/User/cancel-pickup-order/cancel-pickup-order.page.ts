@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+
 @Component({
-  selector: 'app-mark-delivery',
-  templateUrl: './mark-delivery.page.html',
-  styleUrls: ['./mark-delivery.page.scss'],
+  selector: 'app-cancel-pickup-order',
+  templateUrl: './cancel-pickup-order.page.html',
+  styleUrls: ['./cancel-pickup-order.page.scss'],
 })
-export class MarkDeliveryPage implements OnInit {
+export class CancelPickupOrderPage implements OnInit {
 
   constructor(private modalController: ModalController) { }
 
@@ -15,5 +16,6 @@ export class MarkDeliveryPage implements OnInit {
   closeModal() {
     this.modalController.dismiss();
   }
+
 
 }

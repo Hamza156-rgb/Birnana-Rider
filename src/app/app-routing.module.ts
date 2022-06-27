@@ -72,6 +72,34 @@ const routes: Routes = [
     path: 'delivery-arrived',
     loadChildren: () => import('./User/delivery-arrived/delivery-arrived.module').then( m => m.DeliveryArrivedPageModule)
   },
+  {
+    path: 'pick-manually',
+    loadChildren: () => import('./User/pick-manually/pick-manually.module').then( m => m.PickManuallyPageModule)
+  },
+  {
+    path: 'manuall-confirm-pickup',
+    loadChildren: () => import('./User/manuall-confirm-pickup/manuall-confirm-pickup.module').then( m => m.ManuallConfirmPickupPageModule)
+  },
+  {
+    path: 'next-pickup',
+    loadChildren: () => import('./User/next-pickup/next-pickup.module').then( m => m.NextPickupPageModule)
+  },
+  {
+    path: 'cancel-pickup-order',
+    loadChildren: () => import('./User/cancel-pickup-order/cancel-pickup-order.module').then( m => m.CancelPickupOrderPageModule)
+  },
+  {
+    path: 'online-deliveryorder',
+    loadChildren: () => import('./User/online-deliveryorder/online-deliveryorder.module').then( m => m.OnlineDeliveryorderPageModule)
+  },
+  {
+    path: 'online-pickup-order',
+    loadChildren: () => import('./User/online-pickup-order/online-pickup-order.module').then( m => m.OnlinePickupOrderPageModule)
+  },
+  {
+    path: 'manual-order-reciept',
+    loadChildren: () => import('./User/manual-order-reciept/manual-order-reciept.module').then( m => m.ManualOrderRecieptPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuController } from '@ionic/angular';
-import { MenuComponent } from 'src/app/Component/menu/menu.component'
+
 
 @Component({
   selector: 'app-screen',
@@ -8,7 +8,7 @@ import { MenuComponent } from 'src/app/Component/menu/menu.component'
   styleUrls: ['./screen.page.scss'],
 })
 export class ScreenPage implements OnInit {
-  rootPage:any = MenuComponent;
+ 
   constructor(private menu: MenuController, ) { }
 
   ngOnInit() {

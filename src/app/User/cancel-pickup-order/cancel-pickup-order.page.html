@@ -1,16 +1,17 @@
 <ion-content>
 
   <ion-row>
-    <ion-col size="4">
+    <ion-col size="2">
       <div class="ion-text-start">
         <ion-icon class="ion-padding-top" name="chevron-back-outline" style="font-size: 20px;  color: black;"
-          [routerLink]="['/delivery-arrived']"></ion-icon>
+          [routerLink]="['/manuall-confirm-pickup']"></ion-icon>
       </div>
     </ion-col>
-    <ion-col size="4">
+    <ion-col size="8">
       <div class="ion-text-center">
+
         <h3>
-          Order 342
+          Cancel the order
         </h3>
       </div>
     </ion-col>
@@ -18,13 +19,46 @@
   </ion-row>
 
 
-  <h4>Mark order is an important aspects of the app, all orders must be marked to validate a safe delivery</h4>
+  <ion-row>
+    <ion-col size="12">
+      <ion-card>
+        <ion-card-header>
+          <div class="tips">
+            <ion-img src="../assets/user/tips.png" style="width: 5%;" class="ion-padding-top"></ion-img>
+            <h1>Tips</h1>
+          </div>
+
+        </ion-card-header>
+        <ion-card-content>
+          <h4>1.You can only cancel based on difference in delivery details</h4>
+          <br />
+          <h4>2. Your account will be suspended for one day if you cancel 5 orders in a day</h4>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
 
 
   <ion-row class="ion-padding">
+    <h2>Why do you want to cancel this order?</h2>
+
     <ion-col size="10">
       <div class="ion-text-start">
-        <p>Delivered directly to customer</p>
+        <p>Pickup location was offline</p>
+      </div>
+    </ion-col>
+    <ion-col size="2">
+      <div class="ion-padding-top ion-text-end">
+        <ion-radio color="warning" mode="md"  id="trigger-button"></ion-radio>
+      </div>
+    </ion-col>
+
+
+
+    <ion-col size="10">
+      <div class="ion-text-start">
+        <p>Information provided was wrong</p>
       </div>
     </ion-col>
     <ion-col size="2">
@@ -37,12 +71,12 @@
 
     <ion-col size="10">
       <div class="ion-text-start">
-        <p>Delivered directly to customer</p>
+        <p>Pickup customer was rude</p>
       </div>
     </ion-col>
     <ion-col size="2">
       <div class="ion-padding-top ion-text-end">
-        <ion-radio color="warning"  mode="md"></ion-radio>
+        <ion-radio color="warning" mode="md"></ion-radio>
       </div>
     </ion-col>
 
@@ -50,58 +84,20 @@
 
     <ion-col size="10">
       <div class="ion-text-start">
-        <p>Customer directed on doorpost</p>
+        <p>I have mechanical issues</p>
       </div>
     </ion-col>
     <ion-col size="2">
       <div class="ion-padding-top ion-text-end">
-        <ion-radio color="warning"  mode="md"></ion-radio>
+        <ion-radio color="warning" mode="md"></ion-radio>
       </div>
     </ion-col>
 
-
-
-    <ion-col size="10">
-      <div class="ion-text-start">
-        <p>Delivered to third party on customer notice</p>
-      </div>
-    </ion-col>
-    <ion-col size="2">
-      <div class="ion-padding-top ion-text-end">
-        <ion-radio color="warning"  mode="md"></ion-radio>
-      </div>
-    </ion-col>
-
-
-
-    <ion-col size="10">
-      <div class="ion-text-start">
-        <p>Customer was offline</p>
-      </div>
-    </ion-col>
-    <ion-col size="2">
-      <div class="ion-padding-top ion-text-end">
-        <ion-radio color="warning" id="trigger-button"  mode="md"></ion-radio>
-      </div>
-    </ion-col>
-  </ion-row>
-
-
-
-  <ion-row>
-    <ion-card>
-      <ion-card-content>
-        <h5>
-          Customer marked as offline will be added fees of N200 for back to back delivery. We advised all riders to do a
-          proper reach out before marking any customer as offline
-        </h5>
-      </ion-card-content>
-    </ion-card>
   </ion-row>
 
   <ion-row class="ion-padding-top">
     <ion-col size="12" class="ion-padding">
-      <button [routerLink]="['/delivery-recepit']">
+      <button [routerLink]="['/screen']">
         Confirm
       </button>
     </ion-col>
@@ -114,11 +110,11 @@
 
 
         <ion-card-content>
-          <div class="image"  (click)="closeModal()">
+          <div class="image" (click)="closeModal()">
             <ion-img src="../assets/user/1.gif" style="width: 50%;"></ion-img>
           </div>
-         
-          <h6>Customer was offline will be added to delivery(pending orders)</h6>
+
+          <h6>Cancelling pickup order</h6>
 
         </ion-card-content>
       </ion-card>
