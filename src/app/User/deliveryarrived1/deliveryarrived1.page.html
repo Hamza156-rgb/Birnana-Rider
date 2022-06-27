@@ -13,21 +13,20 @@
 
             <ion-col size="8">
               <div class="ion-text-start">
-                <p class="address">Pickup Profile</p>
+                <p class="address">Delivery profile:</p>
               </div>
             </ion-col>
             <ion-col size="4">
               <div class="ion-text-end">
-                <p class="km">3.2km</p>
+                <p class="km">1.2km</p>
               </div>
             </ion-col>
 
 
             <ion-col size="12">
-              <div class="user">
-                <ion-img src="../assets/user/1.png" style="width: 10%;">
-                </ion-img>
-                <p class="name ion-padding">Andre Krist</p>
+              <div class="ion-text-start">
+
+                <p class="name ion-padding">James Anderson</p>
               </div>
             </ion-col>
 
@@ -37,9 +36,12 @@
 
             <ion-col size="10">
               <ion-item lines="none">
-                <ion-checkbox color="success">
+
+                <ion-checkbox color="warning">
+
+
                 </ion-checkbox>
-                <p class="check"> 3rd Ave road, Ikot Ansa</p>
+                <p class="check">13th SDAT Cricket Ground</p>
               </ion-item>
             </ion-col>
 
@@ -88,7 +90,7 @@
           <ion-row class="ion-padding">
 
             <ion-col size="12">
-              <button class="arrived" [routerLink]="['/delivery-arrived']">Arrived</button>
+              <button class="arrived" [routerLink]="['/manual-order-reciept']">Arrived</button>
             </ion-col>
           </ion-row>
         </ion-card-content>

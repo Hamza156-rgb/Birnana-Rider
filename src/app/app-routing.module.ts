@@ -100,6 +100,26 @@ const routes: Routes = [
     path: 'manual-order-reciept',
     loadChildren: () => import('./User/manual-order-reciept/manual-order-reciept.module').then( m => m.ManualOrderRecieptPageModule)
   },
+  {
+    path: 'deliveryarrived1',
+    loadChildren: () => import('./User/deliveryarrived1/deliveryarrived1.module').then( m => m.Deliveryarrived1PageModule)
+  },
+  {
+    path: 'home1',
+    loadChildren: () => import('./Offline/home1/home1.module').then( m => m.Home1PageModule)
+  },
+  {
+    path: 'home2',
+    loadChildren: () => import('./Offline/home2/home2.module').then( m => m.Home2PageModule)
+  },
+  {
+    path: 'home3',
+    loadChildren: () => import('./Offline/home3/home3.module').then( m => m.Home3PageModule)
+  },
+  {
+    path: 'home4',
+    loadChildren: () => import('./Offline/home4/home4.module').then( m => m.Home4PageModule)
+  },
 ];
 
 @NgModule({
