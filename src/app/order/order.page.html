@@ -1,0 +1,183 @@
+<ion-content>
+
+  <ion-row>
+    <ion-col size="4">
+      <div class="ion-text-start">
+        <ion-icon class="ion-padding-top" name="chevron-back-outline" style="font-size: 30px;  color: black;"
+          [routerLink]="['/earning']"></ion-icon>
+      </div>
+    </ion-col>
+    <ion-col size="4">
+      <div class="ion-text-center">
+        <h3>
+          Orders
+        </h3>
+      </div>
+    </ion-col>
+
+    <ion-col size="4">
+      <div class="ion-text-end" style="padding-top: 9%;">
+        <button class="select ">
+          <ion-select placeholder="Today">
+            <ion-select-option>today</ion-select-option>
+            <ion-select-option>Yesterday</ion-select-option>
+            <ion-select-option>data</ion-select-option>
+            <ion-select-option>data</ion-select-option>
+            <ion-select-option>date</ion-select-option>
+
+          </ion-select>
+        </button>
+
+      </div>
+    </ion-col>
+
+  </ion-row>
+  
+  <ion-row class="ion-padding">
+    <ion-segment value=" Confirmed" mode="md">
+      <ion-segment-button value=" Confirmed">
+        <ion-label> Confirmed</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value=" Pickup">
+        <ion-label> Pickup</ion-label>
+      </ion-segment-button>
+      <ion-segment-button  value="  Delivery">
+        <ion-label>  Delivery</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  
+  </ion-row>
+
+
+
+
+
+
+  <ion-row class="ion-padding" style="border-bottom: 1px solid #DADADA;">
+    <ion-col size="6">
+      <div class="ion-text-start flex">
+        <h4>Order 321</h4>
+        <h6>2.7km</h6>
+        
+      </div>
+    </ion-col>
+  
+    <ion-col size="6">
+      <div class="ion-text-end">
+        <h5>N300</h5>
+      </div>
+    </ion-col>
+  
+  <ion-col size="12">
+    <ion-item lines="none">
+      <ion-radio color="success" mode="md"></ion-radio>
+      <p>7th street, SDAT Cricket Ground</p>
+    </ion-item>
+  </ion-col>
+  
+  <ion-col size="10">
+    <ion-item lines="none">
+      <ion-radio color="warning" mode="md"></ion-radio>
+      <p>525system, marian road</p>
+    </ion-item>
+  </ion-col>
+  
+  <ion-col size="2">
+    <button class="start">Start</button>
+  </ion-col>
+  
+  
+  
+  </ion-row>
+
+
+
+
+
+
+
+
+  <ion-row>
+    <ion-col size="12">
+      <ion-card>
+        <ion-card-content>
+         
+            <ion-row>
+              <ion-col size="10">
+                <div class="ion-text-start"><h5 class="total">Total</h5></div>
+              </ion-col>
+
+              <ion-col size="2">
+                <div class="ion-text-end">
+                  <h5  class="total">
+                    N300
+                  </h5>
+                  </div>
+              </ion-col>
+
+            </ion-row>
+
+            <ion-row style="border-bottom: 1px solid rgba(218, 218, 218, 0.39);" class="ion-padding-top">
+              <ion-col size="10">
+                <div class="ion-text-start"><h6 class="value">Product weight</h6></div>
+              </ion-col>
+
+              <ion-col size="2">
+                <div class="ion-text-end">
+                  <h6 class="value">
+                    4kg
+                  </h6>
+                  </div>
+              </ion-col>
+
+            </ion-row>
+
+
+
+
+
+            <ion-row style="border-bottom: 1px solid rgba(218, 218, 218, 0.39);" class="ion-padding-top">
+              <ion-col size="10">
+                <div class="ion-text-start"><h6 class="value">Your reward</h6></div>
+              </ion-col>
+
+              <ion-col size="2">
+                <div class="ion-text-end">
+                  <h6 class="value">
+                    N300
+                  </h6>
+                  </div>
+              </ion-col>
+
+            </ion-row>
+
+
+
+
+            <ion-row class="ion-padding-top">
+              <ion-col size="6">
+                <div class="ion-text-start"><h6 class="value">Payment method</h6></div>
+              </ion-col>
+
+              <ion-col size="6">
+                <div class="ion-text-end">
+                  <h6 class="value">
+                    Pay on delivery
+                  </h6>
+                  </div>
+              </ion-col>
+
+            </ion-row>
+
+
+
+       
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+
+
+
+</ion-content>

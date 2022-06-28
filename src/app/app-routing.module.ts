@@ -124,6 +124,38 @@ const routes: Routes = [
     path: 'earning',
     loadChildren: () => import('./earning/earning.module').then( m => m.EarningPageModule)
   },
+  {
+    path: 'order',
+    loadChildren: () => import('./order/order.module').then( m => m.OrderPageModule)
+  },
+  {
+    path: 'promotions',
+    loadChildren: () => import('./promotions/promotions.module').then( m => m.PromotionsPageModule)
+  },
+  {
+    path: 'support',
+    loadChildren: () => import('./support/support.module').then( m => m.SupportPageModule)
+  },
+  {
+    path: 'inbox',
+    loadChildren: () => import('./chat/inbox/inbox.module').then( m => m.InboxPageModule)
+  },
+  {
+    path: 'chatbox',
+    loadChildren: () => import('./chat/chatbox/chatbox.module').then( m => m.ChatboxPageModule)
+  },
+  {
+    path: 'about',
+    loadChildren: () => import('./about/about.module').then( m => m.AboutPageModule)
+  },
+  {
+    path: 'personal-profile',
+    loadChildren: () => import('./personal-profile/personal-profile.module').then( m => m.PersonalProfilePageModule)
+  },
+  {
+    path: 'others-profile',
+    loadChildren: () => import('./others-profile/others-profile.module').then( m => m.OthersProfilePageModule)
+  },
 ];
 
 @NgModule({

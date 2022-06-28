@@ -1,0 +1,85 @@
+h3 {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    color: #f1bd42;
+}
+.select {
+    width: 70%;
+    background: #ffffff;
+    border: 1px solid #c9ccd3;
+    border-radius: 5px;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    color: #555b6a;
+}
+ion-segment-button {
+    --background-checked: #133040;
+    --color-checked: #ffffff;
+}
+h4 {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #030919;
+}
+h5 {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    color: #030919;
+}
+p {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #555b6a;
+    padding-left: 2%;
+}
+.start {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #f1bd42;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    color: #f1bd42;
+}
+.flex {
+    display: flex;
+}
+.flex h6 {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    color: #f1bd42;
+    padding: 2% 0 0 4%;
+}
+ion-card {
+    background: #133040;
+    border-radius: 5px;
+}
+.total {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #f7f7f7;
+}
+
+.value {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #ffffff;
+}
