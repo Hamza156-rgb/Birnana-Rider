@@ -1,9 +1,63 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>inbox</ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content>
 
+  <ion-row>
+    <ion-col size="2">
+      <div class="ion-text-start">
+        <ion-icon class="ion-padding-top" name="chevron-back-outline" style="font-size: 30px;  color: black;"
+          ></ion-icon>
+      </div>
+    </ion-col>
+    <ion-col size="8">
+      <div class="ion-text-center">
+        <h3>
+          Inbox 
+        </h3>
+      </div>
+    </ion-col>
+    <ion-col size="2"></ion-col>
+
+  </ion-row>
+
+  <p class="ion-padding">Our support team will respond to your request on time via these chat or email.</p>
+
+  <ion-row>
+    <ion-col size="2">
+      <ion-img src="../assets/user/1.png" style="width: 80%;" class="ion-padding-top"></ion-img>
+    </ion-col>
+    <ion-col size="6">
+      <h4>Birnana support</h4>
+      <h5>You: order 351</h5>
+    </ion-col>
+    <ion-col size="4">
+      <h6>Nov 11, 11:41 AM</h6>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row [routerLink]="['/chatbox']">
+    <ion-col size="2">
+      <ion-img src="../assets/user/1.png" style="width: 80%;" class="ion-padding-top"></ion-img>
+    </ion-col>
+    <ion-col size="6">
+      <h4>Birnana support</h4>
+      <h5>You: order 351</h5>
+    </ion-col>
+    <ion-col size="4">
+      <h6>Nov 11, 11:41 AM</h6>
+    </ion-col>
+  </ion-row>
+
+
 </ion-content>
+
+
+<ion-footer>
+  <ion-row class="ion-padding">
+    <ion-col size="12">
+      <button class="start" [routerLink]="['/chatbox']">Start chat</button>
+    </ion-col>
+  </ion-row>
+ 
+</ion-footer>

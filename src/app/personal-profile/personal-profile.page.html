@@ -1,9 +1,85 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>personalProfile</ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content>
+  <ion-row>
+    <ion-col size="2">
+      <div class="ion-text-start">
+        <ion-icon class="ion-padding-top" name="chevron-back-outline" style="font-size: 30px;  color: black;"
+          ></ion-icon>
+      </div>
+    </ion-col>
+    <ion-col size="8">
+      <div class="ion-text-center">
+        <h3>
+          Acccount
+        </h3>
+      </div>
+    </ion-col>
+    <ion-col size="2"></ion-col>
+
+  </ion-row>
+
+
+
+  <ion-row>
+    <ion-col size="12">
+      <ion-card>
+        <ion-row>
+          <ion-col size="6">
+            <button class="Personal" >Personal</button>
+          </ion-col>
+          <ion-col size="6">
+            <button class="Others" [routerLink]="['/others-profile']">Others</button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <div class="image">
+    <ion-img src="../assets/user/account.png" ></ion-img>
+  </div>
+
+  <ion-row class="ion-padding">
+    <ion-col size="6">
+      <ion-label>Full name</ion-label>
+      <ion-input placeholder="Agbama"></ion-input>
+    </ion-col>
+    <ion-col size="6">
+      <ion-label>Full name</ion-label>
+      <ion-input placeholder="Ulimhuka"></ion-input>
+    </ion-col>
+
+    <ion-col size="12" class="ion-padding-top">
+      <ion-label>Email address</ion-label>
+      <ion-input placeholder="Ulimhukaakem@gmail.com"></ion-input>
+
+    </ion-col>
+
+    <ion-col size="12" class="ion-padding-top">
+      <ion-label>Phone number</ion-label>
+      <ion-input placeholder="09069469010"></ion-input>
+
+    </ion-col>
+
+
+    <ion-col size="12" class="ion-padding-top">
+      <ion-label>Change city</ion-label>
+      <ion-select placeholder="Calabar">
+        <ion-select-option> USA</ion-select-option>
+        <ion-select-option> USA</ion-select-option>
+        <ion-select-option> USA</ion-select-option>
+      </ion-select>
+
+    </ion-col>
+
+
+    <ion-col size="12" class="ion-padding-top">
+      <button  [routerLink]="['/login']">Log out</button>
+    </ion-col>
+
+  </ion-row>
+
+
 
 </ion-content>
