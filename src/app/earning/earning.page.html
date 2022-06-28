@@ -1,0 +1,170 @@
+<ion-content>
+
+  <ion-row>
+    <ion-col size="4">
+      <div class="ion-text-start">
+        <ion-icon class="ion-padding-top" name="chevron-back-outline" style="font-size: 30px;  color: black;"
+          [routerLink]="['/']"></ion-icon>
+      </div>
+    </ion-col>
+    <ion-col size="4">
+      <div class="ion-text-center">
+        <h3>
+          Earnings
+        </h3>
+      </div>
+    </ion-col>
+
+  </ion-row>
+  <p class="ion-padding">
+    Welcome to your payment account. Kaana takes 10% of your delivery reward
+  </p>
+
+  <ion-row>
+    <ion-col size="12">
+      <ion-card>
+        <ion-card-content>
+          <h5>Kaana Wallet Balance</h5>
+          <h4 class="ion-padding-top">N2000.00</h4>
+          <div class="ion-padding-top btn">
+            <button id="trigger-button">
+              <ion-img src="../assets/user/withdraw.png" style="width: 15%;padding-right: 3%;"></ion-img>
+              Withdraw
+            </button>
+          </div>
+
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+  </ion-row>
+
+  <h6>Recent transactions</h6>
+
+
+
+
+  <ion-row class="ion-padding" style="border-bottom: 1px solid rgba(201, 204, 211, 0.2);;">
+    <ion-col size="3">
+      <div class="ion-text-start">
+        <ion-img src="../assets/user/forward.png" style="width: 30%;" class="ion-padding-top"></ion-img>
+      </div>
+
+    </ion-col>
+    <ion-col size="6">
+
+      <h1>Wallet withdrawal</h1>
+      <h2>Nov 28, 2021</h2>
+
+    </ion-col>
+    <ion-col size="3" class="ion-padding-top">
+      <div class="ion-text-end">
+        <p class="value">-3000.00</p>
+      </div>
+
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row class="ion-padding" style="border-bottom: 1px solid rgba(201, 204, 211, 0.2);;">
+    <ion-col size="3">
+      <div class="ion-text-start">
+        <ion-img src="../assets/user/plus.png" style="width: 30%;" class="ion-padding-top"></ion-img>
+      </div>
+
+    </ion-col>
+    <ion-col size="6">
+
+      <h1>Wallet withdrawal</h1>
+      <h2>Nov 28, 2021</h2>
+
+    </ion-col>
+    <ion-col size="3" class="ion-padding-top">
+      <div class="ion-text-end">
+        <p class="values">+300.00</p>
+      </div>
+
+    </ion-col>
+  </ion-row>
+
+
+
+
+  <ion-row class="ion-padding" style="border-bottom: 1px solid rgba(201, 204, 211, 0.2);;">
+    <ion-col size="3">
+      <div class="ion-text-start">
+        <ion-img src="../assets/user/plus.png" style="width: 30%;" class="ion-padding-top"></ion-img>
+      </div>
+
+    </ion-col>
+    <ion-col size="6">
+
+      <h1>Wallet withdrawal</h1>
+      <h2>Nov 28, 2021</h2>
+
+    </ion-col>
+    <ion-col size="3" class="ion-padding-top">
+      <div class="ion-text-end">
+        <p class="values">+300.00</p>
+      </div>
+
+    </ion-col>
+  </ion-row>
+
+
+
+
+  <ion-row class="ion-padding" style="border-bottom: 1px solid rgba(201, 204, 211, 0.2);;">
+    <ion-col size="3">
+      <div class="ion-text-start">
+        <ion-img src="../assets/user/plus.png" style="width: 30%;" class="ion-padding-top"></ion-img>
+      </div>
+
+    </ion-col>
+    <ion-col size="6">
+
+      <h1>Wallet withdrawal</h1>
+      <h2>Nov 28, 2021</h2>
+
+    </ion-col>
+    <ion-col size="3" class="ion-padding-top">
+      <div class="ion-text-end">
+        <p class="values">+300.00</p>
+      </div>
+
+    </ion-col>
+  </ion-row>
+
+
+
+
+  <ion-modal trigger="trigger-button" style="width: 100%;height: 90vh;margin-top: 40%;">
+    <ng-template>
+
+      <ion-card style="background-color: white;">
+        <ion-card-content>
+
+          <div class="image" (click)="closeModal()">
+            <ion-img src="../assets/user/1.gif" style="width: 30%;"></ion-img>
+          </div>
+
+          <h6 class="request">Submitting withdrawal request</h6>
+        </ion-card-content>
+      </ion-card>
+
+
+
+
+
+    </ng-template>
+  </ion-modal>
+
+
+
+
+
+
+
+
+
+</ion-content>

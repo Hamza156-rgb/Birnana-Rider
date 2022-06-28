@@ -120,6 +120,10 @@ const routes: Routes = [
     path: 'home4',
     loadChildren: () => import('./Offline/home4/home4.module').then( m => m.Home4PageModule)
   },
+  {
+    path: 'earning',
+    loadChildren: () => import('./earning/earning.module').then( m => m.EarningPageModule)
+  },
 ];
 
 @NgModule({
