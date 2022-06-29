@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
+import { MapsComponent } from 'src/app/maps/maps.component';
 import { IonicModule } from '@ionic/angular';
 
 import { ConfirmPickupPageRoutingModule } from './confirm-pickup-routing.module';
@@ -9,12 +9,14 @@ import { ConfirmPickupPageRoutingModule } from './confirm-pickup-routing.module'
 import { ConfirmPickupPage } from './confirm-pickup.page';
 
 @NgModule({
+
   imports: [
     CommonModule,
+
     FormsModule,
     IonicModule,
     ConfirmPickupPageRoutingModule
   ],
-  declarations: [ConfirmPickupPage]
+  declarations: [ConfirmPickupPage, MapsComponent]
 })
-export class ConfirmPickupPageModule {}
+export class ConfirmPickupPageModule { }
