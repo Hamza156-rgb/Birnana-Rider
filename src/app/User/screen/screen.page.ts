@@ -1,5 +1,5 @@
 import { Component, OnInit, } from '@angular/core';
-import { MenuController } from '@ionic/angular';
+
 
 
 @Component({
@@ -10,23 +10,9 @@ import { MenuController } from '@ionic/angular';
 export class ScreenPage implements OnInit {
 
 
-  constructor(private menu: MenuController,) { }
+  constructor() { }
 
   ngOnInit() {
-  }
-
-  openFirst() {
-    this.menu.enable(true, 'first');
-    this.menu.open('first');
-  }
-
-  openEnd() {
-    this.menu.open('end');
-  }
-
-  openCustom() {
-    this.menu.enable(true, 'custom');
-    this.menu.open('custom');
   }
 
 }

@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { Home1PageRoutingModule } from './home1-routing.module';
+import { MapsComponent } from 'src/app/Components/maps/maps.component';
+import { SidemenuComponent } from 'src/app/Components/sidemenu/sidemenu.component';
 
 import { Home1Page } from './home1.page';
 
@@ -15,6 +17,6 @@ import { Home1Page } from './home1.page';
     IonicModule,
     Home1PageRoutingModule
   ],
-  declarations: [Home1Page]
+  declarations: [Home1Page,MapsComponent,SidemenuComponent]
 })
 export class Home1PageModule {}

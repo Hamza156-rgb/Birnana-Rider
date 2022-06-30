@@ -1,10 +1,10 @@
 <ion-header>
   <ion-toolbar>
-    <ion-row >
+    <ion-row>
       <ion-col size="2">
         <div class="ion-text-start">
           <ion-icon class="ion-padding-top" name="chevron-back-outline" style="font-size: 30px;  color: black;"
-            ></ion-icon>
+            [routerLink]="['/screen']"></ion-icon>
         </div>
       </ion-col>
       <ion-col size="8">
@@ -15,22 +15,22 @@
         </div>
       </ion-col>
       <ion-col size="2"></ion-col>
-  
+
     </ion-row>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
- 
 
 
 
-  <ion-row class="ion-padding-top"> 
+
+  <ion-row class="ion-padding-top">
     <ion-col size="12">
       <ion-card>
         <ion-row>
           <ion-col size="6">
-            <button class="Personal" >Personal</button>
+            <button class="Personal">Personal</button>
           </ion-col>
           <ion-col size="6">
             <button class="Others" [routerLink]="['/others-profile']">Others</button>
@@ -40,8 +40,8 @@
     </ion-col>
   </ion-row>
 
-  <div class="image ion-padding-top" >
-    <ion-img src="../assets/user/account.png" ></ion-img>
+  <div class="image ion-padding-top">
+    <ion-img src="../assets/user/account.png"></ion-img>
   </div>
 
   <ion-row class="ion-padding">
@@ -78,12 +78,12 @@
     </ion-col>
 
     <ion-col size="12" class="ion-padding-top">
-      <button  [routerLink]="['/login']">Log out</button>
+      <button [routerLink]="['/login']">Log out</button>
     </ion-col>
 
-   
+
   </ion-row>
-  
+
 
 
 

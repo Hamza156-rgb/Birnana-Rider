@@ -1,26 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-row>
+      <ion-col size="2">
+        <div class="ion-text-start">
+          <ion-icon class="ion-padding-top" name="chevron-back-outline" style="font-size: 30px;  color: black;"
+          [routerLink]="['/inbox']"     ></ion-icon>
+        </div>
+      </ion-col>
+      <ion-col size="8">
+        <div class="ion-text-center">
+          <h3>
+            Chat box 
+          </h3>
+        </div>
+      </ion-col>
+      <ion-col size="2"></ion-col>
+  
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
 
 
 <ion-content>
 
 
   
-  <ion-row>
-    <ion-col size="2">
-      <div class="ion-text-start">
-        <ion-icon class="ion-padding-top" name="chevron-back-outline" style="font-size: 30px;  color: black;"
-        [routerLink]="['/inbox']"     ></ion-icon>
-      </div>
-    </ion-col>
-    <ion-col size="8">
-      <div class="ion-text-center">
-        <h3>
-          Chat box 
-        </h3>
-      </div>
-    </ion-col>
-    <ion-col size="2"></ion-col>
-
-  </ion-row>
 
   <p class="ion-padding">
     if it’s an issue with an order, please attach the order number for clearer responds
@@ -37,7 +43,7 @@
     </ion-col>
   </ion-row>
 </ion-content>
-<ion-footer>
+<ion-footer style="background-color: white;">
   <ion-row class="ion-padding">
     <ion-col size="12">
       <button class="start" >Send message</button>

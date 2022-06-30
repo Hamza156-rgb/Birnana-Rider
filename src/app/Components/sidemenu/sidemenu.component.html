@@ -17,7 +17,7 @@
         <p class="name">
           Agbama
         </p>
-        <p class="profile"> View profile</p>
+        <p class="profile" [routerLink]="['/personal-profile']"> View profile</p>
       </ion-col>
       <ion-col size="3">
         <div class="ion-text-end">
@@ -30,19 +30,19 @@
   <ion-content class="try ion-padding-top">
     <ion-list id="main" lines="none" class="ion-padding-top">
       <ion-item>
-        <ion-icon name="calculator-outline" style="font-size: 30px;color:#f7f7f7"></ion-icon>
-        <p class="menu" [routerLink]="['/earning']">Earnings</p>
+        <ion-icon name="calculator-outline" style="font-size: 30px;color:#f7f7f7" [routerLink]="['/earning']"></ion-icon>
+        <p class="menu" >Earnings</p>
       </ion-item>
-      <ion-item [routerLink]="['/orders']">
-        <ion-icon name="reader-outline" style="font-size: 30px;color:#f7f7f7"></ion-icon>
+      <ion-item >
+        <ion-icon name="reader-outline" style="font-size: 30px;color:#f7f7f7" [routerLink]="['/order']"></ion-icon>
         <p class="menu">Orders</p>
       </ion-item>
-      <ion-item>
-        <ion-icon name="settings-outline" style="font-size: 30px;color:#f7f7f7"></ion-icon>
+      <ion-item >
+        <ion-icon name="settings-outline" style="font-size: 30px;color:#f7f7f7" [routerLink]="['/promotions']"></ion-icon>
         <p class="menu">Promotions</p>
       </ion-item>
-      <ion-item [routerLink]="['/support']">
-        <ion-icon name="people-outline" style="font-size: 30px;color:#f7f7f7"></ion-icon>
+      <ion-item >
+        <ion-icon name="people-outline" style="font-size: 30px;color:#f7f7f7" [routerLink]="['/support']"></ion-icon>
         <p class="menu">Support</p>
       </ion-item>
       <ion-item>

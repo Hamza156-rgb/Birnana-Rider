@@ -1,12 +1,11 @@
-
-
-<ion-content>
-
+<ion-header>
+  <ion-toolbar>
+    
   <ion-row>
     <ion-col size="2">
       <div class="ion-text-start">
         <ion-icon class="ion-padding-top" name="chevron-back-outline" style="font-size: 30px;  color: black;"
-          ></ion-icon>
+        [routerLink]="['/support']"     ></ion-icon>
       </div>
     </ion-col>
     <ion-col size="8">
@@ -19,21 +18,15 @@
     <ion-col size="2"></ion-col>
 
   </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
 
   <p class="ion-padding">Our support team will respond to your request on time via these chat or email.</p>
 
-  <ion-row>
-    <ion-col size="2">
-      <ion-img src="../assets/user/1.png" style="width: 80%;" class="ion-padding-top"></ion-img>
-    </ion-col>
-    <ion-col size="6">
-      <h4>Birnana support</h4>
-      <h5>You: order 351</h5>
-    </ion-col>
-    <ion-col size="4">
-      <h6>Nov 11, 11:41 AM</h6>
-    </ion-col>
-  </ion-row>
+  
 
 
   <ion-row [routerLink]="['/chatbox']">
