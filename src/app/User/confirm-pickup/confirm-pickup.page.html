@@ -1,12 +1,13 @@
 <ion-content>
 
-<app-sidemenu></app-sidemenu>
-<app-maps></app-maps>
 
+ 
 
+  <app-sidemenu></app-sidemenu>
 
   <ion-row>
     <ion-col size="12">
+      <app-maps></app-maps>
       <ion-card>
 
         <ion-card-content>
@@ -20,7 +21,7 @@
               </div>
             </ion-col>
             <ion-col size="4">
-              <div class="ion-text-end" >
+              <div class="ion-text-end">
                 <p class="km">3.2km</p>
               </div>
             </ion-col>
@@ -29,7 +30,7 @@
             <ion-col size="12">
               <ion-item lines="none">
 
-                <ion-radio   mode="md" color="success">
+                <ion-radio mode="md" color="success">
 
 
                 </ion-radio>
@@ -38,14 +39,14 @@
             </ion-col>
 
             <ion-col size="12" class="ion-padding">
-              <div class="ion-text-start" >
+              <div class="ion-text-start">
                 Delivery Address
               </div>
             </ion-col>
 
             <ion-col size="12">
               <ion-item lines="none">
-                <ion-radio  mode="md" color="warning">
+                <ion-radio mode="md" color="warning">
                 </ion-radio>
                 <p class="check"> 13 SDAT Cricket Ground </p>
               </ion-item>
@@ -83,7 +84,7 @@
               <button class="cancel" [routerLink]="['/screen']">Cancel</button>
             </ion-col>
             <ion-col size="6">
-              <button class="confirm"  [routerLink]="['/pickup-arrived']" >Confirm</button>
+              <button class="confirm" [routerLink]="['/pickup-arrived']">Confirm</button>
             </ion-col>
           </ion-row>
         </ion-card-content>
