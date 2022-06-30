@@ -5,7 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { StartDeliveryPageRoutingModule } from './start-delivery-routing.module';
-
+import { MapsComponent } from 'src/app/Components/maps/maps.component';
+import { SidemenuComponent } from 'src/app/Components/sidemenu/sidemenu.component';
 import { StartDeliveryPage } from './start-delivery.page';
 
 @NgModule({
@@ -15,6 +16,6 @@ import { StartDeliveryPage } from './start-delivery.page';
     IonicModule,
     StartDeliveryPageRoutingModule
   ],
-  declarations: [StartDeliveryPage]
+  declarations: [StartDeliveryPage,MapsComponent,SidemenuComponent]
 })
 export class StartDeliveryPageModule {}
