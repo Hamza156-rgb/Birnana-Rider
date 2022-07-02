@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuController } from '@ionic/angular'; 
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-sidemenu',
   templateUrl: './sidemenu.component.html',
@@ -8,11 +8,13 @@ import { MenuController } from '@ionic/angular';
 })
 export class SidemenuComponent implements OnInit {
 
-  constructor(private menu: MenuController) { }
+  constructor(private menu: MenuController,private router: Router) { }
 
   ngOnInit() {}
   openEnd() {  
     this.menu.close();
    
     }
+
+    
 }

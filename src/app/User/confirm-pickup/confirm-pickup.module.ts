@@ -4,9 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { MapsComponent } from 'src/app/Components/maps/maps.component';
 import { SidemenuComponent } from 'src/app/Components/sidemenu/sidemenu.component';
 import { IonicModule } from '@ionic/angular';
-
 import { ConfirmPickupPageRoutingModule } from './confirm-pickup-routing.module';
-
 import { ConfirmPickupPage } from './confirm-pickup.page';
 
 @NgModule({
