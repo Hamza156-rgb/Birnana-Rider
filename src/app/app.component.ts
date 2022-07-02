@@ -1,10 +1,18 @@
 import { Component } from '@angular/core';
-
+import { MenuController } from '@ionic/angular';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  constructor(public menuCtrl: MenuController, private router: Router) {}
+  openEnd(){
+    this.menuCtrl.toggle("mainMenu");
+  }
+  openPage(page) {
+    this.router.navigateByUrl(page);
+    this.menuCtrl.toggle("mainMenu");
+  }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { MenuController } from '@ionic/angular';
 @Component({
   selector: 'app-order',
   templateUrl: './order.page.html',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrderPage implements OnInit {
 
-  constructor() { }
+  constructor(public menuCtrl: MenuController,) { }
 
   ngOnInit() {
   }
+
+  toggleMenu() {
+    this.menuCtrl.toggle("mainMenu");
+  }
+
 
 }

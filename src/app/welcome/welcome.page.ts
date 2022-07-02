@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { MenuController } from '@ionic/angular';
 @Component({
   selector: 'app-welcome',
   templateUrl: './welcome.page.html',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomePage implements OnInit {
 
-  constructor() { }
+  constructor(public menuCtrl: MenuController) { }
 
   ngOnInit() {
   }
-
+  ionViewWillLeave() {
+    this.menuCtrl.enable(true)
+  }
+  ionViewWillEnter() {
+    this.menuCtrl.enable(false);
+  }
 }

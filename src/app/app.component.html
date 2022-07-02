@@ -1,4 +1,63 @@
 <ion-app>
- 
-  <ion-router-outlet ></ion-router-outlet>
+  <ion-split-pane contentId="main-content">
+    <ion-menu type="overlay" class="main-menu" menuId="mainMenu" contentId="main-content">
+      <ion-header style="background-color: #133040;">
+        <ion-row>
+          <ion-col size="3">
+            <div class="ion-text-start">
+              <ion-img src="../assets/user/1.png" style="width: 70%;" class="ion-padding-top"></ion-img>
+            </div>
+          </ion-col>
+          <ion-col size="6">
+            <p class="name">
+              Agbama
+            </p>
+            <p class="profile" [routerLink]="['/personal-profile']"> View profile</p>
+          </ion-col>
+          <ion-col size="3">
+            <div class="ion-text-end">
+              <ion-icon (click)="openEnd()" name="close-circle" style="color: #F7F7F7;font-size:30px;" class="ion-padding-top"></ion-icon>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-header>
+      
+      <ion-content class="try ion-padding-top">
+
+        <ion-list id="main" lines="none" class="ion-padding-top">
+
+          <ion-item (click)="openPage('screen')">
+            <ion-icon name="locate-outline" style="font-size: 30px;color:#f7f7f7" ></ion-icon>
+            <p class="menu" >Home</p>
+          </ion-item>
+          <ion-item (click)="openPage('earning')">
+            <ion-icon name="calculator-outline" style="font-size: 30px;color:#f7f7f7" ></ion-icon>
+            <p class="menu" >Earnings</p>
+          </ion-item>
+          <ion-item (click)="openPage('order')">
+            <ion-icon name="reader-outline" style="font-size: 30px;color:#f7f7f7" ></ion-icon>
+            <p class="menu">Orders</p>
+          </ion-item>
+          <ion-item (click)="openPage('promotions')">
+            <ion-icon name="settings-outline" style="font-size: 30px;color:#f7f7f7" ></ion-icon>
+            <p class="menu">Promotions</p>
+          </ion-item>
+          <ion-item (click)="openPage('support')">
+            <ion-icon name="people-outline" style="font-size: 30px;color:#f7f7f7" ></ion-icon>
+            <p class="menu">Support</p>
+          </ion-item>
+          <ion-item (click)="openPage('about')">
+            <ion-icon name="information-circle-outline" style="font-size: 30px;color:#f7f7f7" >
+            </ion-icon>
+            <p class="menu">About</p>
+    
+    
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content">
+
+    </ion-router-outlet>
+  </ion-split-pane>
 </ion-app>

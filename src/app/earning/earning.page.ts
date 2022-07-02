@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-
+import { MenuController } from '@ionic/angular';
 @Component({
   selector: 'app-earning',
   templateUrl: './earning.page.html',
@@ -8,7 +8,7 @@ import { ModalController } from '@ionic/angular';
 })
 export class EarningPage implements OnInit {
 
-  constructor(private modalController: ModalController) { }
+  constructor(private modalController: ModalController,public menuCtrl: MenuController,) { }
 
   ngOnInit() {
   }
@@ -18,5 +18,8 @@ export class EarningPage implements OnInit {
     this.modalController.dismiss();
   }
 
+  toggleMenu() {
+    this.menuCtrl.toggle("mainMenu");
+  }
 
 }

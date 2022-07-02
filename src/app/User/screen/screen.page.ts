@@ -1,5 +1,5 @@
 import { Component, OnInit, } from '@angular/core';
-
+import { MenuController } from '@ionic/angular';
 
 
 @Component({
@@ -10,9 +10,11 @@ import { Component, OnInit, } from '@angular/core';
 export class ScreenPage implements OnInit {
 
 
-  constructor() { }
+  constructor( public menuCtrl: MenuController,) { }
 
   ngOnInit() {
   }
-
+  toggleMenu() {
+    this.menuCtrl.toggle("mainMenu");
+  }
 }

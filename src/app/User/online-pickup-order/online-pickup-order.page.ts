@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { MenuController } from '@ionic/angular';
 @Component({
   selector: 'app-online-pickup-order',
   templateUrl: './online-pickup-order.page.html',
@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OnlinePickupOrderPage implements OnInit {
 
-  constructor() { }
+  constructor(public menuCtrl: MenuController) { }
 
   ngOnInit() {
   }
+
+  ionViewWillLeave(){
+    this.menuCtrl.enable(true,"mainMenu")
+  }
+  
+  
+  
+  
+  
+  ionViewWillEnter() {
+      this.menuCtrl.enable(false);
+    }
+  
+  
 
 }

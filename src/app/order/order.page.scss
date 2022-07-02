@@ -19,6 +19,7 @@ h3 {
 ion-segment-button {
     --background-checked: #133040;
     --color-checked: #ffffff;
+    --color:#000000;
 }
 h4 {
     font-family: "Mulish";
@@ -84,5 +85,6 @@ ion-card {
     color: #ffffff;
 }
 ion-select-option{
-    color: black;
+    --ion-color-dark-contrast: #000000;
+
 }
