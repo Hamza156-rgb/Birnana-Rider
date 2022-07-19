@@ -1,16 +1,26 @@
-<ion-icon #icon1 class="header-icon ion-padding" (click)="toggleMenu()" slot="start" style="color:black;" src="assets/icon/menu.svg"></ion-icon>
+<ion-header>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col size="4">
+          <ion-icon #icon1 class="header-icon ion-padding" (click)="toggleMenu()"  style="color:black;"
+          src="assets/icon/menu.svg"></ion-icon>
+      </ion-col>
+      <ion-col size="4">
+          <p>N0.00</p>
+      </ion-col>
+      <ion-col size="4"></ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
 
 
 <ion-content>
-
-
   <app-maps></app-maps>
-
   <ion-row>
     <ion-col size="12">
       <ion-card>
         <ion-card-content>
-          <button  [routerLink]="['/home2']">
+          <button [routerLink]="['/home2']">
             <ion-icon name="chevron-forward-outline" style="float: left;color:white;font-size:20px;"></ion-icon>
 
             Go Online
@@ -32,7 +42,8 @@
               <h4>Complete the order before taking order</h4>
             </ion-col>
             <ion-col size="1">
-              <ion-icon name="chevron-forward-outline" style="color: #A7A7A7;font-size:20px;" [routerLink]="['/order']"></ion-icon>
+              <ion-icon name="chevron-forward-outline" style="color: #A7A7A7;font-size:20px;" [routerLink]="['/order']">
+              </ion-icon>
             </ion-col>
           </ion-row>
         </ion-card-content>
@@ -42,9 +53,9 @@
 
   </ion-row>
 
-  
-        <h5 class="ion-padding">TODAYS EARNINGS</h5>
-      
- 
+
+  <h5 class="ion-padding">TODAYS EARNINGS</h5>
+
+
 
 </ion-content>
